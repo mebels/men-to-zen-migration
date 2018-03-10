@@ -20,4 +20,12 @@ Now use the migration scripts at your own risk.
 
 If you use tables Prefixe in the database, they must be written in the right place in the script.
 
+Start the Scripts:
+
+Please don't start the PHP Scripts in a Browser, if you have many Photos. Please use the command line on a shell like this:
+
+```php migrate-albums.php | tee logfile-migrate-albums.txt```
+
+The "tee" is for a logfile. Please look into the logfile, when the script has finished, and search for errors.
+
 good byte!
