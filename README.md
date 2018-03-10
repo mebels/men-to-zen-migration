@@ -14,7 +14,7 @@ You can also test Zenphoto first.
 Tip: copy the database tables "albums", "images" and "obj_to_tag", right after the installation, if they are still empty. After trying out Zenphoto, you can then swap them for the originals before starting the migration.
 
 After testing Zenphoto, delete all test photos and test albums, in the backend, from the database and folder / albums.
-Then upload all your photo files to the folder / albums.
+Then upload all your photo files to the folder /albums.
 Start a scan in the backend (Overview -> Refresh database), so that all albums and photo files are entered in the database.
 Now use the migration scripts at your own risk.
 
