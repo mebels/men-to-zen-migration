@@ -18,6 +18,10 @@ Then upload all your photo files to the folder /albums.
 Start a scan in the backend (Overview -> Refresh database), so that all albums and photo files are entered in the database.
 Now use the migration scripts at your own risk.
 
+The scripts work as follows:
+Extract each entry one by one from the Zenphoto database table. For albums the path is used. Menalto database table column: relative_path_cache. Zenphoto database table column: folder. Images use the path and file name with file extension. Menalto database table column: relative_path_cache. Zenphoto database table columns: albums-> folder + images-> filename. Search for match and extract the entries (title, description, etc.) from the Menalto database table.
+Notice: Files that are not in the Zenphoto Folder /albums that are not entered in the Zenphoto database when clicking on "Refresh database" and therefore not included in the migration.
+
 If you use tables Prefixe in the database, they must be written in the right place in the script.
 
 With the albums and images script you can do a test run by commenting out the lines of the SQL UPDATE at the end and the associated if/else (successfull/error) rule. In addition, an (commented-out) option for a limited test run is included (value $i with continue and break).
