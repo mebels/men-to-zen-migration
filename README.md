@@ -20,12 +20,14 @@ Now use the migration scripts at your own risk.
 
 If you use tables Prefixe in the database, they must be written in the right place in the script.
 
+With the albums and images script you can do a test run by commenting out the lines of the SQL UPDATE at the end and the associated if/else (successfull/error) rule. In addition, an (commented-out) option for a limited test run is included (value $i with continue and break).
+
 Start the Scripts:
 
 Please don't start the PHP Scripts in a Browser, if you have many Photos. Please use the command line on a shell like this:
 
 ```php migrate-albums.php | tee logfile-migrate-albums.txt```
 
-The "tee" is for a logfile. Please look into the logfile, when the script has finished, and search for errors.
+The "tee" is for a logfile. Please look into the logfile, when the script has finished, and search for errors and warnings.
 
 good byte!
