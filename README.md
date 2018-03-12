@@ -11,7 +11,7 @@ What to consider:
 First install Zenphoto completely.
 You can also test Zenphoto first.
 
-Tip: copy the database tables "albums", "images" and "obj_to_tag", right after the installation, if they are still empty. After trying out Zenphoto, you can then swap them for the originals before starting the migration.
+Tip: copy the database tables "albums", "images", "tags" and "obj_to_tag", right after the installation, if they are still empty. After trying out Zenphoto, you can then swap them for the originals before starting the migration. It is best to always keep an empty original of these tables and copy this only. After migration and checking for any errors, you can delete the blank backups.  However, Zenphoto is designed to run at any time a setup that creates new database tables that do not exist.
 
 After testing Zenphoto, delete all test photos and test albums, in the backend, from the database and folder / albums.
 Then upload all your photo files to the folder /albums.
